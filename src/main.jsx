@@ -7,6 +7,7 @@ import Dashboard from './pages/Dashboard.jsx';
 import Setting from './pages/Setting.jsx';
 import AddReminder from './pages/AddReminder.jsx';
 import Layout from './components/Layout.jsx';
+import History from './pages/History.jsx';
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
   {
     path: "/add",
     element: <AddReminder/>
+  },
+  {
+    path: "/history",
+    element: <History/>
   },]}
   
 ])

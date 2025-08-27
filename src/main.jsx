@@ -8,6 +8,7 @@ import Setting from './pages/Setting.jsx';
 import AddReminder from './pages/AddReminder.jsx';
 import Layout from './components/Layout.jsx';
 import History from './pages/History.jsx';
+import { Toaster } from "react-hot-toast";
 
 const router = createBrowserRouter([
   {
@@ -35,7 +36,26 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <Toaster
+  position="top-right"
+  toastOptions={{
+    success: {
+      style: {
+        background: "#d1fae5",
+        color: "#065f46",
+        fontWeight: "500",
+      },
+    },
+    error: {
+      style: {
+        background: "#fee2e2",
+        color: "#991b1b",
+        fontWeight: "500",
+      },
+    },
+  }}
+/>
+
     <RouterProvider router={router} />
   </StrictMode>,
 )

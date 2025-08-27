@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { MOCK_REMINDERS } from "../mock/Reminders";
+import toast from "react-hot-toast";
 
 export default function AddReminder() {
   const [searchParams] = useSearchParams();
@@ -71,7 +72,9 @@ export default function AddReminder() {
     localStorage.setItem("reminders", JSON.stringify(reminders));
 
     navigate("/"); // go back to dashboard
+    toast.success("✅ Reminder saved successfully!");
   };
+
 
   return (
     <div className="max-w-md mx-auto p-6">

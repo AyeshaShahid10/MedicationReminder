@@ -12,7 +12,7 @@ A privacy-first medication reminder app that helps people stay on top of their d
 
 | Dashboard (light) | Dashboard (dark) | Add reminder |
 |---|---|---|
-| ![alt text](image.png) | ![alt text](image-2.png) | ![alt text](image-1.png) |
+| ./screenshots/light | ./screenshots/dark |./screenshots/add|
 
 | History & adherence chart | Settings |
 |---|---|

@@ -16,7 +16,7 @@ A privacy-first medication reminder app that helps people stay on top of their d
 
 | History & adherence chart | Settings |
 |---|---|
-| _add screenshot_ | _add screenshot_ |
+| ./screenshots/history | ./screenshots/settings |
 
 ---
 

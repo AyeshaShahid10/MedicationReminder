@@ -1,4 +1,4 @@
-# 💊 MedTrack — Medication Reminder & Adherence Tracker
+# 💊Medication Reminder & Adherence Tracker
 
 A privacy-first medication reminder app that helps people stay on top of their doses, see how consistent they've been, and catch low prescriptions before they run out. Built with React, React Router, Tailwind CSS v4, and browser-native notifications — no backend, no account, no data leaving the device.
 
@@ -10,13 +10,22 @@ A privacy-first medication reminder app that helps people stay on top of their d
 
 ## Screenshots
 
-| Dashboard (light) | Dashboard (dark) | Add reminder |
-|---|---|---|
-| ./screenshots/light | ./screenshots/dark |./screenshots/add|
+## Screenshots
 
-| History & adherence chart | Settings |
-|---|---|
-| ./screenshots/history | ./screenshots/settings |
+### Dashboard
+![Dashboard light mode](./screenshots/light.png)
+
+### Dark mode
+![Dashboard dark mode](./screenshots/dark.png)
+
+### Add reminder
+![Add reminder form](./screenshots/add.png)
+
+### History & adherence chart
+![History page](./screenshots/history.png)
+
+### Settings
+![Settings page](./screenshots/settings.png)
 
 ---
 
@@ -109,7 +118,7 @@ src/
 | Icons | lucide-react | Consistent, tree-shakeable icon set |
 | Notifications | Web Notification API + `react-hot-toast` | Native OS notification with an in-app fallback that always works |
 | Persistence | `localStorage` (via a custom hook) | No backend required; every write is synchronous and instant |
-| State | React Context + hooks | No state library needed for this scope — see [Architecture](#-architecture--technical-decisions) |
+| State | React Context + hooks | No state library needed for this scope see [Architecture](#-architecture--technical-decisions) |
 
 No backend is required to run this app — everything persists in the browser via `localStorage`. That's a deliberate scope decision (see [Roadmap](#️-roadmap)), not a limitation the code is unaware of: `exportData`/`importData` exist specifically so a real API layer could be dropped in later without a data-migration headache.
 
@@ -134,11 +143,11 @@ npm run preview    # preview the production build locally
 npm run lint        # run ESLint
 ```
 
-On first launch the app seeds three sample medications so the UI is never empty — clear them anytime from **Settings → Clear all data**.
+On first launch the app seeds three sample medications so the UI is never empty clear them anytime from **Settings → Clear all data**.
 
 ### Trying notifications
 
-Browser notifications require explicit permission. Go to **Settings → Notifications** and toggle it on (or hit **Send test notification**) — the browser will prompt for permission on first use. Add a reminder for a minute or two in the future to see the full due-dose flow end to end.
+Browser notifications require explicit permission. Go to **Settings → Notifications** and toggle it on (or hit **Send test notification**)  the browser will prompt for permission on first use. Add a reminder for a minute or two in the future to see the full due-dose flow end to end.
 
 ---
 
@@ -148,7 +157,7 @@ Ideas for where this goes next, in rough priority order:
 
 - [ ] Optional account + cloud sync (Supabase/Firebase) so data isn't device-locked
 - [ ] Service-worker-based notifications so reminders fire even when the tab is closed
-- [ ] Caregiver/family sharing — a second person can see adherence for someone they support
+- [ ] Caregiver/family sharing a second person can see adherence for someone they support
 - [ ] Medication interaction warnings via an external drug database API
 - [ ] CSV export of history for sharing with a doctor
 - [ ] Unit tests for the scheduling/adherence logic in `utils/time.js`
@@ -157,7 +166,7 @@ Ideas for where this goes next, in rough priority order:
 
 ## 📄 License
 
-MIT — free to use, modify, and learn from.
+MIT  free to use, modify, and learn from.
 
 ---
 
